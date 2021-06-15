@@ -17,8 +17,9 @@
         </div>
 
         <div class="block">
+          <div class="content"><h2>Journeys</h2></div>
           <div class="content is-hidden-tablet">
-            <h2>Journeys</h2>
+            
 
             <ul v-for="journey in journeys" :key="journey.id">
               <li>
@@ -48,7 +49,6 @@
           <div class="container">
             <div v-if="journeys.length === 0">Add your first journey!</div>
             <div v-else>
-              <h2>Journeys</h2>
               <table class="table is-fullwidth is-bordered is-hidden-mobile">
                 <thead>
                   <th class="t-date">Date</th>

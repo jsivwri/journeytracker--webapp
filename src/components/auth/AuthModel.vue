@@ -174,6 +174,11 @@ export default {
       this.$emit('close');
     },
     switchMode(){
+      this.formValid = {
+        email: true,
+        password: true,
+        authentication: true
+      }
       this.$emit('switchMode');
     }
   }
